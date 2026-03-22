@@ -32,25 +32,6 @@ This project introduces a real-time loan simulation engine that allows users to:
 
 ---
 
-## 🏗 System Architecture
-
-Client (Browser / Mifos UI)
-↓
-FastAPI (main.py)
-↓
-Pydantic Validation (models.py)
-↓
-Service Layer (services.py)
-↓
-| EMI Function |
-| Amortization Function |
-| Prepayment Function |
-| Comparison Function |
-    ↓
-    JSON Response
-
----
-
 ## 📡 API Endpoints
 
 ### EMI Calculation
@@ -91,10 +72,10 @@ POST /compare
 ## 📁 Project Structure
 
 app/
-├── main.py          # FastAPI entry point
-├── models.py        # Pydantic request/response models
-├── services.py      # Core business logic (EMI, amortization, prepayment, comparison)
-├── __pycache__/
+├── main.py # FastAPI entry point
+├── models.py # Pydantic models
+├── services.py # All core logic (EMI, amortization, prepayment, comparison)
+├── pycache/
 requirements.txt
 
 ---
